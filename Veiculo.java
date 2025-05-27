@@ -2,12 +2,13 @@ public class Veiculo {
     private String placa;
     private String modelo;
     private String marca;
-//    private String TipoVeiculo;
+    private TipoVeiculo tipo;
 
-    public Veiculo(String placa, String modelo, String marca){
+    public Veiculo(String placa, String modelo, String marca, TipoVeiculo tipo){
       this.placa = placa;
       this.modelo = modelo;
       this.marca = marca;
+      this.tipo = tipo;
     }
 
     public String getPlaca(){
@@ -20,5 +21,9 @@ public class Veiculo {
 
     public String getMarca() {
         return marca;
+    }
+
+    public TipoVeiculo getTipo(){
+        return tipo;
     }
 }
